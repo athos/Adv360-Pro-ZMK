@@ -37,21 +37,21 @@
 
         default_layer {
             bindings = <
- &kp GRAVE    &kp N1     &kp N2    &kp N3    &kp N4  &kp N5                  &kp N6                                                              &kp CAPS  &kp N7  &kp N8  &kp N9    &kp N0   &kp BSPC  &kp SLASH
-   &kp TAB   &kp SQT  &kp COMMA   &kp DOT     &kp P   &kp Y                   &none                                                                &kp UP   &kp F   &kp G   &kp C     &kp R      &kp L  &kp MINUS
- &kp LCTRL     &kp A      &kp O     &kp E     &kp U   &kp I            &kp LC(LBKT)      &none     &none                      &none      &none   &kp DOWN   &kp D   &kp H   &kp T     &kp N      &kp S  &kp ENTER
- &kp LSHFT  &kp SEMI      &kp Q     &kp J     &kp K   &kp X                                     &kp HOME                  &kp PG_UP                         &kp B   &kp M   &kp W     &kp V      &kp Z  &kp RSHFT
-     &mo 2     &none      &none  &kp LALT  &kp LCMD                           &mo 1  &kp LSHFT   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE           &none   &mo 1  &kp LEFT  &kp RIGHT   &kp RCMD
+ &kp GRAVE    &kp N1     &kp N2    &kp N3    &kp N4  &kp N5                  &kp N6                                                              &kp CAPS  &kp N7  &kp N8    &kp N9     &kp N0  &kp BSPC  &kp SLASH
+   &kp TAB   &kp SQT  &kp COMMA   &kp DOT     &kp P   &kp Y                  &tog 3                                                                &kp UP   &kp F   &kp G     &kp C      &kp R     &kp L  &kp MINUS
+ &kp LCTRL     &kp A      &kp O     &kp E     &kp U   &kp I            &kp LC(LBKT)      &none     &none                     &tog 4      &none   &kp DOWN   &kp D   &kp H     &kp T      &kp N     &kp S  &kp ENTER
+ &kp LSHFT  &kp SEMI      &kp Q     &kp J     &kp K   &kp X                                     &kp HOME                  &kp PG_UP                         &kp B   &kp M     &kp W      &kp V     &kp Z  &kp RSHFT
+     &mo 2     &none      &none  &kp LALT  &kp LCMD                           &mo 1  &kp LSHFT   &kp END                  &kp PG_DN  &kp RSHFT  &kp SPACE           &mo 1  &kp LEFT  &kp RIGHT     &none   &kp RCMD
             >;
         };
 
         layer_symbols {
             bindings = <
-   &kp TILDE   &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT            &kp CARET                                                         &trans     &kp N6  &kp KP_NUM   &kp LBKT      &kp RBKT   &kp LS(BSPC)      &kp QMARK
- &kp LS(TAB)    &kp DQT     &kp LT     &kp GT   &kp LS(P)    &kp LS(Y)               &trans                                                     &kp LS(UP)   &kp BSLH    &kp PLUS   &kp LBRC      &kp RBRC      &kp SLASH       &kp PIPE
-      &trans  &kp LS(A)  &kp LS(O)  &kp LS(E)   &kp LS(U)    &kp LS(I)              &kp ESC  &trans  &trans                  &trans  &trans   &kp LS(DOWN)  &kp EQUAL   &kp MINUS   &kp LPAR      &kp RPAR    &kp LC(SQT)  &kp LS(ENTER)
-      &trans  &kp COLON  &kp LS(Q)  &kp LS(J)   &kp LS(K)    &kp LS(X)                               &trans                  &trans                          &kp BSPC   &kp UNDER  &kp LS(W)     &kp LS(V)      &kp QMARK         &trans
-      &trans     &trans     &trans     &trans      &trans                            &trans  &trans  &trans                  &trans  &trans  &kp LS(SPACE)                 &trans     &trans  &kp LS(LEFT)  &kp LS(RIGHT)         &trans
+   &kp TILDE   &kp EXCL     &kp AT   &kp HASH  &kp DOLLAR  &kp PERCENT            &kp CARET                                                         &trans   &kp AMPS  &kp ASTERISK   &kp LBKT      &kp RBKT   &kp LS(BSPC)      &kp QMARK
+ &kp LS(TAB)    &kp DQT     &kp LT     &kp GT   &kp LS(P)    &kp LS(Y)               &trans                                                     &kp LS(UP)   &kp BSLH      &kp PLUS   &kp LBRC      &kp RBRC      &kp SLASH       &kp PIPE
+      &trans  &kp LS(A)  &kp LS(O)  &kp LS(E)   &kp LS(U)    &kp LS(I)              &kp ESC  &trans  &trans                  &trans  &trans   &kp LS(DOWN)  &kp EQUAL     &kp MINUS   &kp LPAR      &kp RPAR    &kp LC(SQT)  &kp LS(ENTER)
+      &trans  &kp COLON  &kp LS(Q)  &kp LS(J)   &kp LS(K)    &kp LS(X)                               &trans                  &trans                          &kp BSPC     &kp UNDER  &kp LS(W)     &kp LS(V)      &kp QMARK         &trans
+      &trans     &trans     &trans     &trans      &trans                            &trans  &trans  &trans                  &trans  &trans  &kp LS(SPACE)                   &trans     &trans  &kp LS(LEFT)  &kp LS(RIGHT)         &trans
             >;
         };
 
@@ -62,6 +62,26 @@
  &trans  &trans  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans   &trans   &trans   &trans
  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans   &trans   &trans   &trans
+            >;
+        };
+
+        layer_hjkl {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans   &kp H   &kp J   &kp K   &kp L            &trans  &trans  &trans                  &trans  &trans  &trans   &kp H   &kp J   &kp K   &kp L  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_kana {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans   &kp K  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
